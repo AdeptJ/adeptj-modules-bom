@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+###############################################################################
+#                                                                             # 
+#    Copyright 2016, AdeptJ (http://www.adeptj.com)                           #
+#                                                                             #
+#    Licensed under the Apache License, Version 2.0 (the "License");          #
+#    you may not use this file except in compliance with the License.         #
+#    You may obtain a copy of the License at                                  #
+#                                                                             #
+#        http://www.apache.org/licenses/LICENSE-2.0                           #
+#                                                                             #
+#    Unless required by applicable law or agreed to in writing, software      #
+#    distributed under the License is distributed on an "AS IS" BASIS,        #
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. #
+#    See the License for the specific language governing permissions and      #
+#    limitations under the License.                                           #
+#                                                                             #
+###############################################################################
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.adeptj</groupId>
+    <artifactId>adeptj-modules-bom</artifactId>
+    <version>1</version>
+    <packaging>pom</packaging>
+    <name>AdeptJ Modules Bill of Materials</name>
+    <description>The Bill of Materials for AdeptJ Modules</description>
+    <url>http://www.adeptj.com</url>
+    <inceptionYear>2016</inceptionYear>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Maven Plugin Dependencies Start -->
+        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+        <bnd-maven-plugin.version>5.3.0</bnd-maven-plugin.version>
+        <adeptj-maven-plugin.version>1.4.2</adeptj-maven-plugin.version>
+        <!-- Maven Plugin Dependencies End -->
+
+        <!-- OSGi Dependencies Start -->
+        <osgi.framework.version>1.10.0</osgi.framework.version>
+        <osgi.service.component.annotations.version>1.4.0</osgi.service.component.annotations.version>
+        <osgi.service.metatype.annotations.version>1.4.0</osgi.service.metatype.annotations.version>
+        <osgi.annotation.versioning.version>1.1.1</osgi.annotation.versioning.version>
+        <osgi.annotation.bundle.version>1.1.0</osgi.annotation.bundle.version>
+        <osgi.service.component.version>1.4.0</osgi.service.component.version>
+        <osgi.service.cm.version>1.6.0</osgi.service.cm.version>
+        <osgi.service.log.version>1.5.0</osgi.service.log.version>
+        <osgi.service.http.whiteboard.version>1.1.0</osgi.service.http.whiteboard.version>
+        <osgi.service.jdbc.version>1.0.0</osgi.service.jdbc.version>
+        <osgi.service.event.version>1.4.0</osgi.service.event.version>
+        <osgi.util.tracker.version>1.5.3</osgi.util.tracker.version>
+        <osgi.service.metatype.version>1.4.0</osgi.service.metatype.version>
+        <osgi.util.converter.version>1.0.1</osgi.util.converter.version>
+        <osgi.util.pushstream.version>1.0.1</osgi.util.pushstream.version>
+        <osgi.service.configurator.version>1.0.0</osgi.service.configurator.version>
+        <osgi.util.promise.version>1.1.1</osgi.util.promise.version>
+        <osgi.util.function.version>1.1.0</osgi.util.function.version>
+        <!-- OSGi Dependencies End -->
+
+        <!-- Apache Felix Dependencies Start -->
+        <felix.webconsole.version>4.6.0</felix.webconsole.version>
+        <felix.configurator.version>1.0.14</felix.configurator.version>
+        <felix.converter.version>1.0.14</felix.converter.version>
+        <felix.jaas.version>1.0.2</felix.jaas.version>
+        <felix.healthcheck.api.version>2.0.4</felix.healthcheck.api.version>
+        <felix.healthcheck.annotation.version>2.0.0</felix.healthcheck.annotation.version>
+        <!-- Apache Felix Dependencies End -->
+
+        <!-- AdeptJ Modules Dependencies Start -->
+        <adeptj-modules-commons-utils.version>1.1.0</adeptj-modules-commons-utils.version>
+        <adeptj-modules-commons-crypto.version>1.0.0</adeptj-modules-commons-crypto.version>
+        <adeptj-modules-commons-jdbc.version>1.0.0</adeptj-modules-commons-jdbc.version>
+        <adeptj-modules-commons-cache.version>1.0.0</adeptj-modules-commons-cache.version>
+        <adeptj-modules-commons-validator.version>1.0.3</adeptj-modules-commons-validator.version>
+        <adeptj-modules-jaxrs-api.version>1.0.0</adeptj-modules-jaxrs-api.version>
+        <adeptj-modules-jaxrs-core.version>2.0.0</adeptj-modules-jaxrs-core.version>
+        <adeptj-modules-data-jpa.version>1.1.0</adeptj-modules-data-jpa.version>
+        <adeptj-modules-data-mybatis.version>1.0.0</adeptj-modules-data-mybatis.version>
+        <adeptj-modules-data-mongodb.version>1.0.0</adeptj-modules-data-mongodb.version>
+        <adeptj-modules-websecurity-jwt.version>1.1.0</adeptj-modules-websecurity-jwt.version>
+        <!-- AdeptJ Modules Dependencies End -->
+
+    </properties>
+
+    <!-- Project Information -->
+    <organization>
+        <name>AdeptJ</name>
+        <url>http://www.adeptj.com</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>rakeshk15</id>
+            <name>Rakesh Kumar</name>
+            <email>irakeshk@outlook.com</email>
+            <url>https://www.linkedin.com/in/rakeshk15</url>
+            <organization>AdeptJ</organization>
+            <organizationUrl>http://www.adeptj.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+5:30</timezone>
+            <properties>
+                <picUrl>https://secure.gravatar.com/avatar/be26830472769171a96543880c651dcd</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <url>https://github.com/AdeptJ/adeptj-modules-bom/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh-adeptj</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh-adeptj</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <url>https://github.com/AdeptJ/adeptj-modules-bom</url>
+        <connection>scm:git:git@github.com:AdeptJ/adeptj-modules-bom.git</connection>
+        <developerConnection>scm:git:git@github.com:AdeptJ/adeptj-modules-bom.git</developerConnection>
+    </scm>
+
+    <build>
+
+        <pluginManagement>
+
+            <plugins>
+
+                <plugin>
+                    <groupId>biz.aQute.bnd</groupId>
+                    <artifactId>bnd-maven-plugin</artifactId>
+                    <version>${bnd-maven-plugin.version}</version>
+                    <configuration>
+                        <bndfile>bnd.bnd</bndfile>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>bnd-process</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven-jar-plugin.version}</version>
+                    <configuration>
+                        <archive>
+                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                        </archive>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>com.adeptj</groupId>
+                    <artifactId>adeptj-maven-plugin</artifactId>
+                    <version>${adeptj-maven-plugin.version}</version>
+                </plugin>
+
+            </plugins>
+
+        </pluginManagement>
+
+    </build>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <!-- OSGi Dependencies Start -->
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.framework</artifactId>
+                <version>${osgi.framework.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.component.annotations</artifactId>
+                <version>${osgi.service.component.annotations.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.metatype.annotations</artifactId>
+                <version>${osgi.service.metatype.annotations.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.annotation.versioning</artifactId>
+                <version>${osgi.annotation.versioning.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.annotation.bundle</artifactId>
+                <version>${osgi.annotation.bundle.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.component</artifactId>
+                <version>${osgi.service.component.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.cm</artifactId>
+                <version>${osgi.service.cm.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.log</artifactId>
+                <version>${osgi.service.log.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.http.whiteboard</artifactId>
+                <version>${osgi.service.http.whiteboard.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.jdbc</artifactId>
+                <version>${osgi.service.jdbc.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.event</artifactId>
+                <version>${osgi.service.event.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.tracker</artifactId>
+                <version>${osgi.util.tracker.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.metatype</artifactId>
+                <version>${osgi.service.metatype.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.converter</artifactId>
+                <version>${osgi.util.converter.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.pushstream</artifactId>
+                <version>${osgi.util.pushstream.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.configurator</artifactId>
+                <version>${osgi.service.configurator.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.function</artifactId>
+                <version>${osgi.util.function.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.util.promise</artifactId>
+                <version>${osgi.util.promise.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- OSGi Dependencies End -->
+
+            <!-- Apache Felix Dependencies Start -->
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.jaas</artifactId>
+                <version>${felix.jaas.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.converter</artifactId>
+                <version>${felix.converter.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.configurator</artifactId>
+                <version>${felix.configurator.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.healthcheck.api</artifactId>
+                <version>${felix.healthcheck.api.version}</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>osgi.core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.healthcheck.annotation</artifactId>
+                <version>${felix.healthcheck.annotation.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.webconsole</artifactId>
+                <version>${felix.webconsole.version}</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>org.osgi.core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.osgi</groupId>
+                        <artifactId>org.osgi.compendium</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- Apache Felix Dependencies End -->
+
+            <!-- AdeptJ Modules Dependencies Start -->
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-utils</artifactId>
+                <version>${adeptj-modules-commons-utils.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-crypto</artifactId>
+                <version>${adeptj-modules-commons-crypto.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-cache</artifactId>
+                <version>${adeptj-modules-commons-cache.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-validator</artifactId>
+                <version>${adeptj-modules-commons-validator.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-jaxrs-api</artifactId>
+                <version>${adeptj-modules-jaxrs-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-jaxrs-core</artifactId>
+                <version>${adeptj-modules-jaxrs-core.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-jdbc</artifactId>
+                <version>${adeptj-modules-commons-jdbc.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-data-jpa</artifactId>
+                <version>${adeptj-modules-data-jpa.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-data-mybatis</artifactId>
+                <version>${adeptj-modules-data-mybatis.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-data-mongodb</artifactId>
+                <version>${adeptj-modules-data-mongodb.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-websecurity-jwt</artifactId>
+                <version>${adeptj-modules-websecurity-jwt.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- AdeptJ Modules Dependencies End -->
+
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>
