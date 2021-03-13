@@ -45,6 +45,11 @@
         <adeptj-modules-data-mybatis.version>1.0.0</adeptj-modules-data-mybatis.version>
         <adeptj-modules-data-mongodb.version>1.0.0</adeptj-modules-data-mongodb.version>
         <adeptj-modules-websecurity-jwt.version>1.1.0</adeptj-modules-websecurity-jwt.version>
+        <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
+        <adeptj-modules-jaxrs-resteasy.version>2.0.0</adeptj-modules-jaxrs-resteasy.version>
+        <adeptj-modules-webconsole-branding.version>1.0.0</adeptj-modules-webconsole-branding.version>
+        <adeptj-modules-webconsole-security.version>1.0.4</adeptj-modules-webconsole-security.version>
+        <adeptj-modules-webconsole-plugins.version>1.0.0</adeptj-modules-webconsole-plugins.version>
         <!-- AdeptJ Modules Dependencies End -->
 
     </properties>
@@ -184,6 +189,41 @@
                 <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-websecurity-jwt</artifactId>
                 <version>${adeptj-modules-websecurity-jwt.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-logging</artifactId>
+                <version>${adeptj-modules-commons-logging.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-jaxrs-resteasy</artifactId>
+                <version>${adeptj-modules-jaxrs-resteasy.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-webconsole-branding</artifactId>
+                <version>${adeptj-modules-webconsole-branding.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-webconsole-security</artifactId>
+                <version>${adeptj-modules-webconsole-security.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-webconsole-plugins</artifactId>
+                <version>${adeptj-modules-webconsole-plugins.version}</version>
                 <scope>provided</scope>
             </dependency>
 
