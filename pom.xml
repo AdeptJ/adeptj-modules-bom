@@ -139,51 +139,6 @@
         <developerConnection>scm:git:git@github.com:AdeptJ/adeptj-modules-bom.git</developerConnection>
     </scm>
 
-    <build>
-
-        <pluginManagement>
-
-            <plugins>
-
-                <plugin>
-                    <groupId>biz.aQute.bnd</groupId>
-                    <artifactId>bnd-maven-plugin</artifactId>
-                    <version>${bnd-maven-plugin.version}</version>
-                    <configuration>
-                        <bndfile>bnd.bnd</bndfile>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>bnd-process</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>${maven-jar-plugin.version}</version>
-                    <configuration>
-                        <archive>
-                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                        </archive>
-                    </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>com.adeptj</groupId>
-                    <artifactId>adeptj-maven-plugin</artifactId>
-                    <version>${adeptj-maven-plugin.version}</version>
-                </plugin>
-
-            </plugins>
-
-        </pluginManagement>
-
-    </build>
-
     <dependencyManagement>
 
         <dependencies>
