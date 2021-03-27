@@ -46,7 +46,9 @@
         <adeptj-modules-commons-validator.version>1.0.3</adeptj-modules-commons-validator.version>
         <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
         <adeptj-modules-data-jpa.version>1.1.0</adeptj-modules-data-jpa.version>
+        <adeptj-modules-data-mybatis-api.version>1.0.0</adeptj-modules-data-mybatis-api.version>
         <adeptj-modules-data-mybatis.version>1.0.0</adeptj-modules-data-mybatis.version>
+        <adeptj-modules-data-mongodb-api.version>1.0.0</adeptj-modules-data-mongodb-api.version>
         <adeptj-modules-data-mongodb.version>1.0.0</adeptj-modules-data-mongodb.version>
         <adeptj-modules-websecurity-jwt.version>1.1.0</adeptj-modules-websecurity-jwt.version>
         <adeptj-modules-jaxrs-api.version>1.0.0</adeptj-modules-jaxrs-api.version>
@@ -178,8 +180,22 @@
 
             <dependency>
                 <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-data-mybatis-api</artifactId>
+                <version>${adeptj-modules-data-mybatis-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-data-mybatis</artifactId>
                 <version>${adeptj-modules-data-mybatis.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-data-mongodb-api</artifactId>
+                <version>${adeptj-modules-data-mongodb-api.version}</version>
                 <scope>provided</scope>
             </dependency>
 
