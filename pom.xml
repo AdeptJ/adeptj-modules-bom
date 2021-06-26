@@ -45,8 +45,8 @@
         <adeptj-modules-commons-cache.version>1.0.0</adeptj-modules-commons-cache.version>
         <adeptj-modules-commons-validator.version>1.0.3</adeptj-modules-commons-validator.version>
         <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
+        <adeptj-modules-data-jpa-eclipselink.version>1.0.0</adeptj-modules-data-jpa-eclipselink.version>
         <adeptj-modules-data-jpa-eclipselink-extension.version>1.0.0</adeptj-modules-data-jpa-eclipselink-extension.version>
-        <adeptj-modules-data-jpa-base.version>1.0.0</adeptj-modules-data-jpa-base.version>
         <adeptj-modules-data-jpa.version>2.0.0</adeptj-modules-data-jpa.version>
         <adeptj-modules-data-mybatis-api.version>1.0.0</adeptj-modules-data-mybatis-api.version>
         <adeptj-modules-data-mybatis.version>1.0.0</adeptj-modules-data-mybatis.version>
@@ -175,8 +175,8 @@
 
             <dependency>
                 <groupId>com.adeptj</groupId>
-                <artifactId>adeptj-modules-data-jpa-base</artifactId>
-                <version>${adeptj-modules-data-jpa-base.version}</version>
+                <artifactId>adeptj-modules-data-jpa-eclipselink</artifactId>
+                <version>${adeptj-modules-data-jpa-eclipselink.version}</version>
                 <scope>provided</scope>
             </dependency>
 
