@@ -45,6 +45,7 @@
         <adeptj-modules-commons-cache.version>1.0.0</adeptj-modules-commons-cache.version>
         <adeptj-modules-commons-validator.version>1.0.3</adeptj-modules-commons-validator.version>
         <adeptj-modules-commons-logging.version>1.0.3</adeptj-modules-commons-logging.version>
+        <adeptj-modules-commons-email.version>1.0.0</adeptj-modules-commons-email.version>
         <adeptj-modules-data-jpa-eclipselink.version>1.0.0</adeptj-modules-data-jpa-eclipselink.version>
         <adeptj-modules-data-jpa-eclipselink-extension.version>1.0.0</adeptj-modules-data-jpa-eclipselink-extension.version>
         <adeptj-modules-data-jpa.version>2.0.0</adeptj-modules-data-jpa.version>
@@ -233,6 +234,13 @@
                 <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-commons-logging</artifactId>
                 <version>${adeptj-modules-commons-logging.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-commons-email</artifactId>
+                <version>${adeptj-modules-commons-email.version}</version>
                 <scope>provided</scope>
             </dependency>
 
