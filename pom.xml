@@ -63,6 +63,10 @@
         <adeptj-modules-webconsole-branding.version>1.0.0</adeptj-modules-webconsole-branding.version>
         <adeptj-modules-webconsole-security.version>1.0.4</adeptj-modules-webconsole-security.version>
         <adeptj-modules-webconsole-plugins.version>1.0.0</adeptj-modules-webconsole-plugins.version>
+        <adeptj-modules-restclient-core.version>1.0.0</adeptj-modules-restclient-core.version>
+        <adeptj-modules-restclient-jetty.version>1.0.0</adeptj-modules-restclient-jetty.version>
+        <adeptj-modules-restclient-apache.version>1.0.0</adeptj-modules-restclient-apache.version>
+        <adeptj-modules-restclient-okhttp.version>1.0.0</adeptj-modules-restclient-okhttp.version>
         <!-- AdeptJ Modules Dependencies End -->
 
     </properties>
@@ -301,6 +305,34 @@
                 <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-webconsole-plugins</artifactId>
                 <version>${adeptj-modules-webconsole-plugins.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-restclient-core</artifactId>
+                <version>${adeptj-modules-restclient-core.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-restclient-jetty</artifactId>
+                <version>${adeptj-modules-restclient-jetty.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-restclient-apache</artifactId>
+                <version>${adeptj-modules-restclient-apache.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-restclient-okhttp</artifactId>
+                <version>${adeptj-modules-restclient-okhttp.version}</version>
                 <scope>provided</scope>
             </dependency>
 
