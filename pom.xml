@@ -58,6 +58,7 @@
         <adeptj-modules-data-mongodb-api.version>1.0.0</adeptj-modules-data-mongodb-api.version>
         <adeptj-modules-data-mongodb.version>1.0.0</adeptj-modules-data-mongodb.version>
         <adeptj-modules-websecurity-jwt.version>1.1.0</adeptj-modules-websecurity-jwt.version>
+        <adeptj-modules-websecurity-oauth.version>1.0.0</adeptj-modules-websecurity-oauth.version>
         <adeptj-modules-jaxrs-api.version>1.0.0</adeptj-modules-jaxrs-api.version>
         <adeptj-modules-jaxrs-core.version>2.0.0</adeptj-modules-jaxrs-core.version>
         <adeptj-modules-jaxrs-resteasy.version>2.0.0</adeptj-modules-jaxrs-resteasy.version>
@@ -264,6 +265,13 @@
                 <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-websecurity-jwt</artifactId>
                 <version>${adeptj-modules-websecurity-jwt.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adeptj</groupId>
+                <artifactId>adeptj-modules-websecurity-oauth</artifactId>
+                <version>${adeptj-modules-websecurity-oauth.version}</version>
                 <scope>provided</scope>
             </dependency>
 
