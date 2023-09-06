@@ -24,7 +24,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.adeptj</groupId>
     <artifactId>adeptj-modules-bom</artifactId>
-    <version>6</version>
+    <version>7</version>
     <packaging>pom</packaging>
     <name>AdeptJ Modules Bill of Materials</name>
     <description>The Bill of Materials for AdeptJ Modules</description>
@@ -68,7 +68,6 @@
         <adeptj-modules-restclient-core.version>1.0.0</adeptj-modules-restclient-core.version>
         <adeptj-modules-restclient-jetty.version>1.0.0</adeptj-modules-restclient-jetty.version>
         <adeptj-modules-restclient-apache.version>1.0.0</adeptj-modules-restclient-apache.version>
-        <adeptj-modules-restclient-okhttp.version>1.0.0</adeptj-modules-restclient-okhttp.version>
         <!-- AdeptJ Modules Dependencies End -->
 
     </properties>
@@ -335,13 +334,6 @@
                 <groupId>com.adeptj</groupId>
                 <artifactId>adeptj-modules-restclient-apache</artifactId>
                 <version>${adeptj-modules-restclient-apache.version}</version>
-                <scope>provided</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.adeptj</groupId>
-                <artifactId>adeptj-modules-restclient-okhttp</artifactId>
-                <version>${adeptj-modules-restclient-okhttp.version}</version>
                 <scope>provided</scope>
             </dependency>
 
